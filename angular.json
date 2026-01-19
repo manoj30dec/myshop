@@ -24,10 +24,17 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "src/img"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": ["src/scss/partials"]
+            },
             "styles": [
-              "src/styles.scss"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/scss/font-awesome.min.css",
+              "src/scss/elegant-icons.css",
+              "src/scss/style.scss"
             ],
             "server": "src/main.server.ts",
             "outputMode": "server",
@@ -83,10 +90,17 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "src/img"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": ["src/scss/partials"]
+            },
             "styles": [
-              "src/styles.scss"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/scss/font-awesome.min.css",
+              "src/scss/elegant-icons.css",
+              "src/scss/style.scss"
             ]
           }
         }

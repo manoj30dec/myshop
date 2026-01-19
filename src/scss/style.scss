@@ -1,0 +1,23 @@
+@use "variable" as *;
+@use "mixins" as *;
+
+// @use "base" as *;
+// @use "header" as *;
+// @use "home-page" as *;
+// @use "footer" as *;
+// @use "breadcrumb" as *;
+// @use "categories" as *;
+// @use "product" as *;
+// @use "shop" as *;
+// @use "product-details" as *;
+// @use "shop-cart" as *;
+// @use "checkout" as *;
+// @use "blog" as *;
+// @use "blog-sidebar" as *;
+// @use "blog-details" as *;
+// @use "contact" as *;
+@use "partials/responsive";
+
+a {
+    text-decoration: none;
+}

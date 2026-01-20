@@ -31,10 +31,16 @@ export class AuthService {
     return true;
   }
 
-  // async login(crendentials: { email: string, password: string }) {
-  //   await firstValueFrom(this.http.post('POST https://api.escuelajs.co/api/v1/auth/login', crendentials))
-  //   await this.checkSession(); //refresh user
-  // }
+  async login(crendentials: { email: string, password: string }) {
+    try {
+      const response = await firstValueFrom(
+        this.http.post('https://api.escuelajs.co/api/v1/auth/login', crendentials)
+      );
+      console.log('Login success', response);
+    } catch (err) {
+      console.error('Login failed', err);
+    }
+  }
 
   // logout() {
   //   // await firstValueFrom(

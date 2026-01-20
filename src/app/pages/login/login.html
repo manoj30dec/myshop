@@ -11,8 +11,22 @@
             class="form-control"
             placeholder="Enter email"
              name="email"
+             required
+              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
             [(ngModel)]="email"
+            #emailControl="ngModel"
           />
+          @if(emailControl.invalid && emailControl.touched){
+            <span class="text-danger">
+              @if(emailControl.errors?.['required']){
+                <span>Email is required</span>
+              }
+              @if(emailControl.errors?.['pattern']){
+                <span>Plesae enter valid email address</span>
+              }
+            </span>
+          }
+
         </div>
 
         <!-- Password -->
@@ -22,9 +36,16 @@
             type="password"
             class="form-control"
             placeholder="Enter password"
+            required
             name="password"
             [(ngModel)]="password"
+            #passwordControl="ngModel"
           />
+          @if(passwordControl.invalid && passwordControl.touched){
+             <span class="text-danger">
+                <span>Please enter password</span>
+             </span>
+          }
         </div>
 
         <!-- Remember me -->
@@ -39,7 +60,7 @@
         </div>
 
         <!-- Login button -->
-        <button type="submit" class="btn btn-primary w-100">
+        <button type="submit" class="btn btn-primary w-100" [disabled]="loginForm.invalid">
           Login
         </button>
 

@@ -8,11 +8,9 @@ import { User } from '../../model/user.interface';
   providedIn: 'root',
 })
 export class AuthService {
-  // constructor(private http: HttpClient, private authStore: AuthStore) {
+  constructor(private http: HttpClient, private authStore: AuthStore) {
 
-  // }
-  private http = inject(HttpClient);
-  private authStore = inject(AuthStore)
+  }
 
   // async checkSession(): Promise<void> {
   //   try {

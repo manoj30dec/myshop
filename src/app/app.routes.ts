@@ -25,7 +25,7 @@ export const routes: Routes = [
                 //canActivate: [authGuardGuard]
             },
             {
-                path: "products",
+                path: "products-list",
                 loadComponent: () => import('./pages/products/products').then(m => m.Products),
                 data: { title: 'Products - iSadarBazar' }
             },

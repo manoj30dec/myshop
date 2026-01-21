@@ -11,9 +11,9 @@
                 <div class="col-xl-6 col-lg-7">
                     <nav class="header__menu">
                         <ul>
-                            <li class="active"><a routerLink="#">Home</a></li>
-                            <li><a routerLink="#">Women’s</a></li>
-                            <li><a routerLink="#">Men’s</a></li>
+                            <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="home">Home</a></li>
+                            <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: false}"><a routerLink="products-list">Products List</a></li>
+                            <!-- <li><a routerLink="#">Men’s</a></li>
                             <li><a routerLink="./shop.html">Shop</a></li>
                             <li><a routerLink="#">Pages</a>
                                 <ul class="dropdown">
@@ -24,17 +24,17 @@
                                 </ul>
                             </li>
                             <li><a routerLink="./blog.html">Blog</a></li>
-                            <li><a routerLink="./contact.html">Contact</a></li>
+                            <li><a routerLink="./contact.html">Contact</a></li> -->
                         </ul>
                     </nav>
                 </div>
                 <div class="col-lg-3">
                     <div class="header__right">
                         <div class="header__right__auth">
-                            <a routerLink="#">Login</a>
-                            <a routerLink="#">Register</a>
+                            <a routerLink="login">Login</a>
+                            <a routerLink="registration">Register</a>
                         </div>
-                        <ul class="header__right__widget">
+                        <!-- <ul class="header__right__widget">
                             <li><span class="icon_search search-switch"></span></li>
                             <li><a routerLink="#"><span class="icon_heart_alt"></span>
                                 <div class="tip">2</div>
@@ -42,7 +42,7 @@
                             <li><a routerLink="#"><span class="icon_bag_alt"></span>
                                 <div class="tip">2</div>
                             </a></li>
-                        </ul>
+                        </ul> -->
                     </div>
                 </div>
             </div>

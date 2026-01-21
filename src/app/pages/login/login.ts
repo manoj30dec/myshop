@@ -16,8 +16,6 @@ export class Login {
   public email: string = "";
   public password: string = ""
   onSubmit(forms: any) {
-    // "email": "john@mail.com",
-    //   "password": "changeme"
     this.email = forms.value.email;
     this.password = forms.value.password;
     if (this.email && this.password) {

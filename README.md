@@ -65,3 +65,6 @@ For more information on using the Angular CLI, including detailed command refere
 ## No window, document, localStorage
 ## No global state
 ## Absolute API URLs
+
+## email: john@mail.com
+## password: changeme
